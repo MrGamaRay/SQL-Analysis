@@ -1,8 +1,11 @@
-##**Solar Panel Production Data Cleaning and Analysis**
+**Solar Panel Production Data Cleaning and Analysis**
+
 **Introduction**
+
 This Python project focuses on cleaning and analyzing data related to the monthly production of solar panels. The dataset consists of two sheets: "Data" and "Monthly Expected Production". The goal of this project is to prepare the data for further analysis by cleaning, correcting, and filling missing values.
 
-##**Steps**
+**Steps**
+
 Read the Data: The project reads the "Data" and "Monthly Expected Production" sheets into their own separate DataFrames for processing.
 
 Remove Duplicate Systems: Any systems with duplicate Meter Serial Numbers are removed from the dataset.
@@ -15,7 +18,8 @@ Fill Missing Daily Production Values: For each system, missing daily production 
 
 Calculate Monthly Production: Monthly production for each system is calculated, taking into account the changes made in the previous steps.
 
-##**Power BI Visualization Insights**
+**Power BI Visualization Insights**
+
 The Power BI visualizations provide valuable insights for a Solar Energy company looking to understand their monthly production for the year 2023:
 
 Top Producers: Florida, New Jersey, California, and Nevada were the top producers of solar energy in 2023, indicating favorable conditions for solar energy production in these states.
@@ -28,22 +32,33 @@ Potential Growth Areas: States like Texas, Louisiana, and Arizona, which are not
 
 Coastal Proximity: The highest-producing states are located near the coast, suggesting that proximity to the coast could play a role in solar energy production, possibly due to weather patterns or environmental factors.
 
-##**Usage**
+**Usage**
+
 To use this project, follow these steps:
 
 Clone the repository to your local machine.
+
 Install the required dependencies using pip install -r requirements.txt.
+
 Ensure your input Excel file (Sunnova_Production_2023.xlsx) is in the project directory.
+
 Run the main.py script to clean and analyze the data.
+
 View the cleaned and analyzed data in the output Excel file (Sunnova_Programming_Test_Edson_Gamma.xlsx).
 
-##**Dependencies**
+**Dependencies**
+
 pandas
 numpy
-Files
+
+**Files**
+
 main.py: Python script for cleaning and analyzing the data.
+
 Sunnova_Production_2023.xlsx: Input Excel file containing the original data.
+
 Sunnova_Programming_Test_Edson_Gamma.xlsx: Output Excel file containing the cleaned and analyzed data.
 
-##**Acknowledgements**
+**Acknowledgements**
+
 This project was created by Edson Gama for the purpose of cleaning and analyzing solar panel production data and providing business insights based on the data.
