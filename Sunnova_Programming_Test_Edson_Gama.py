@@ -3,8 +3,8 @@ import numpy as np
 from warnings import simplefilter
 
 simplefilter(action="ignore", category=pd.errors.PerformanceWarning)
-data: pd.DataFrame = pd.read_excel('Candidate_Advanced_Excel_Review.xlsx', sheet_name=1)
-monthly_expected_prodcution: pd.DataFrame = pd.read_excel('Candidate_Advanced_Excel_Review.xlsx', sheet_name=2)
+data: pd.DataFrame = pd.read_excel('Sunnova_Production_2023.xlsx', sheet_name=1)
+monthly_expected_prodcution: pd.DataFrame = pd.read_excel('Sunnova_Production_2023.xlsx', sheet_name=2)
 data = data.drop_duplicates(subset='Meter Serial Number', keep=False)
 data.loc[data["System Size (kW)"] < 2.0, "System Size (kW)"] = 2.0
 
